@@ -1,0 +1,35 @@
+package day1;
+
+import java.util.Scanner;
+
+public class sample3 {
+	public static void main(String args[]) {
+		Scanner s=new Scanner(System.in);
+	System.out.println("Enter a lower case:");
+	String str=s.nextLine();
+	int count=0;
+	int lower=0;
+	for(char i:str.toCharArray())	{
+		count++;
+		
+	}
+	System.out.println("String length:"+count);
+	for(char i:str.toCharArray())	
+	{
+		if(i>='a'&& i<='z') {
+		lower++;
+		
+	}}
+	System.out.println("String lower case length:"+lower);
+	if(count == lower){
+		System.out.println("It is all letter lower case");
+	
+	}
+	else {
+		System.out.println("please enter a lowercase");
+	}
+	}
+	
+	
+
+}
